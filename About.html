@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kavya | About page</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     
+     <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/47abc1a791.js" crossorigin="anonymous"></script>
+     <script src="script.js" defer></script>
+</head>
+<body>
+    <canvas id="swirl-canvas"></canvas>
+    <header >
+        <nav class="navbar navbar-expand-lg fixed-top d-flex justify-content-around align-items-center">
+            <div class="logo ">
+                <img src="images/Logo.png" alt="">
+            </div>
+
+            <div class="d-flex align-items-center ">
+                <ul class="navbar-nav navbar-collapse collapse" id="navbarSupportedContent" >
+                    <a class="elements" href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                    <a class="elements " href="About.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>About</span>
+                    </a>
+    
+                    <a class="elements " href="project.html">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a class="elements " href="contact.html">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Contact</span>
+                    </a>
+                </ul>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="darkmode-toggle" class="ps-3">
+                    <img src="images/night.gif" id="mode" alt="Dark Mode" >
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+            <video autoplay loop muted class="about-bg" >
+                <source src="images/colorvideo.mp4"  type="video/mp4" >
+            </video>
+           
+        
+        <section class="about-container">
+            <div class="social-link-container ">
+                <div class="social-link">
+                    <a href="https://github.com/kavya123-ambure" target="_blank" class="social-link-icon">
+                        <img src="images/github-logo.png" alt="" class="social-img">
+                        </a>
+                </div>
+                <div class="social-link">
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=kavyaambure@gmail.com&su=Let's connect&body=Hi! I am kavya Ambure. Lets connect!" target="_blank" class="social-link-icon">
+                        <img src="images/gmail.png" alt="" class="social-img">
+                        </a>
+                </div>
+                <div class="social-link">
+                    <a href="https://x.com/Kavya_Vibes" target="_blank" class="social-link-icon">
+                        <img src="images/twitter.jpg"  alt="" class="social-img">
+                        </a>
+                </div>
+                <div class="social-link">
+                    <a href="https://www.instagram.com/___iamkavya___/" class="social-link-icon" target="_blank" >
+                        <img src="images/instagram.png"  alt="" class="social-img">
+                        </a>
+                </div>
+                <div class="social-link">
+                    <a href="https://www.linkedin.com/in/kavya-ambure-web-developer/" class="social-link-icon" target="_blank" >
+                        <h1 class="social-img">in</h1>
+                        </a>
+                </div>
+                
+
+            </div>
+            <div class="about-image opacity animate"></div>
+
+            <div class="about-content right animate ">
+                <h1>Hi 👋, I'm Kavya, a passionate👩‍💻 <span class="about-me"></span></h1>
+                <p >I'm a passionate Frontend Developer with a strong foundation in HTML, CSS, JavaScript, and React. I specialize in building responsive, user-friendly web applications with modern UI/UX principles. My expertise extends to frameworks like Tailwind CSS, Bootstrap, and backend technologies like Node.js and SQL 🧑‍💻⚙️.
+
+                💻With hands-on experience in real-world projects, I’ve developed interactive web applications, including a Date Picker App using React and a dynamic movie landing page that enhanced user engagement by 20%.
+                
+                Beyond coding, I thrive on problem-solving, teamwork, and continuous learning. I’m always eager to explore new technologies to build efficient, scalable applications. Looking forward to contributing my skills to a dynamic and innovative team! 🚀🙌</p>
+                <a class="resume-button" href="KavyaAmbure_Resume.pdf" download>Download Resume</a>
+            </div>
+        </section>
+    
+        <section class="skills-section">
+            <h1 class="heading upside animate">🛠️Skills</h1>
+            <h4 class="my-3 upside animate"> Technical Proficiencies⚙️</h4>
+
+            <div class="skills-container">
+                <div class="skill-box ">
+                    <div class="skills-elements">
+                        <p>HTML</p>
+                        <div class="progress-bar" data-progress="95"></div>
+                    </div>
+                    <div class="skills-elements">
+                        <p>CSS</p>
+                        <div class="progress-bar" data-progress="70"></div>
+                    </div>
+                    <div class="skills-elements">
+                        <p>JavaScript</p>
+                        <div class="progress-bar" data-progress="60"></div>
+                    </div>
+                    <div class="skills-elements">
+                        <p>React</p>
+                        <div class="progress-bar" data-progress="40"></div>
+                    </div>
+                    <div class="skills-elements">
+                        <p>Bootstrap</p>
+                        <div class="progress-bar" data-progress="70"></div>
+                    </div>
+                </div>
+                
+                
+                <div class="skill-box2 " >
+               
+                    <div class="backend-elements">
+                        <div class="progress-circle" data-progress="80">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <p>SQL</p>
+                    </div>
+                    <div class="backend-elements">
+                        <div class="progress-circle" data-progress="50">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <p>Node js</p>
+                    </div>
+                    <div class="backend-elements">
+                        <div class="progress-circle" data-progress="60">
+                            <span class="progress-value">0%</span>
+                        </div>
+                        <p>Java</p>
+                    </div>
+                    
+                </div>
+            
+                <div class="skill-box3 " >
+            
+                    <div class="tools-main">
+                        <div class="tool-container">
+                            <div class="tool-box " >
+                                <div class="tool-progress" data-progress="80">
+                                    <span class="progress-value">0%</span>
+                                </div> 
+                            </div>
+                            <p>Git</p>
+                        </div>
+                        <div class="tool-container">
+                            <div class="tool-box" >
+                                <div class="tool-progress" data-progress="60">
+                                    <span class="progress-value">0%</span>
+                                </div>
+                            </div>
+                            <p>Postman</p>
+                        </div>
+
+                        <div class="tool-container">
+                            <div class="tool-box" >
+                                <div class="tool-progress" data-progress="90">
+                                    <span class="progress-value">0%</span>
+                                </div>
+                                
+                            </div>
+                            <p>Canva</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+        <section id="education">
+            <h1 class="heading  upside animate">🏫 Education</h1>
+            <div class="education-box upside animate">
+                <h3>🎓 Bachelor of Computer Applications (BCA)</h3>
+                <p>🏛️Laxmi Venkatesh Desai College, Raichur </p>
+                <p>💻Department Of Computer Science | 2022</p>
+               
+                <p>📊Cumulative GPA: 8.29</p>
+            </div>
+        </section>
+        <section id="certification">
+            <h1 class="heading mb-5 upside animate">📜Certifications</h1>
+            
+            <div class="certification-container">
+                <div class="line-animation">
+                    <div class="progress-line"></div>
+                </div>
+                <div class="content-container" >
+                    <div class="certification left animate ">
+                        <h3>Web Development Internship</h3>
+                        <p><strong>Octanet Services PVT LTD</strong></p>
+                        <p>1st Dec 2024 – 1st Feb 2025</p>
+                        <a href="https://drive.google.com/file/d/1tDQfvbGzVRTo2mLlNcHbMJIhijW1lKKU/view?usp=sharing" class="icon-button" target="_blank">View Certificate</a>
+                    </div>
+                    <div class="certification right animate">
+                        <h3>Certificate of Completion</h3>
+                        <p><strong>Octanet Services PVT LTD</strong></p>
+                        <p>1st Dec 2024 – 1st Feb 2025</p>
+                        <a href="https://drive.google.com/file/d/1t70iCnjR1ka_eUM0YQVI7zVNa_abyI_1/view?usp=sharing" class="icon-button" target="_blank">View Certificate</a>
+                    </div>
+                    <div class="certification left animate   ">
+                        <h3>Responsive Web Design Certification</h3>
+                        <p><strong>FreeCodeCamp</strong></p>
+                        <p>Aug 2024 – Sep 2024</p>
+                        <a href="https://www.freecodecamp.org/certification/fccdac7fca2-9ffe-4a6f-95df-7ba0a941017a/responsive-web-design" class="icon-button" target="_blank">View Certificate</a>
+                    </div>
+                    <div class="certification right animate  ">
+                        <h3>Full Stack Development Certification</h3>
+                        <p><strong>KodNest</strong></p>
+                        <p>Dec 2022 – May 2023</p>
+                        <a href="https://drive.google.com/file/d/1s_YLGFv_FEy3UBzDhk_NYMBhFdON7k5k/view?usp=sharing" class="icon-button" target="_blank">View Certificate</a>
+                    </div>
+                    <div class="certification left animate ">
+                        <h3>Soft Skill Certification</h3>
+                        <p><strong>TCS ion</strong></p>
+                        <p>Mar 2022</p>
+                        <a href="https://drive.google.com/file/d/1zvm68zrLzJF5KWMkp88Xpp2qiCy9iWsb/view?usp=sharing" class="icon-button" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+     <footer>
+        <p>&copy; 2024 Kavya Ambure  |  Made with ❤️</p>
+    </footer>
+    
+</body>
+</html>

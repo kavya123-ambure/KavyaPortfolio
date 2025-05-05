@@ -1,0 +1,96 @@
+
+.contact-image{
+    width: 100%;
+    height: auto;
+}
+.smoke-text h1 {
+    color: black;
+    margin-top: 50px;
+}
+.dark-mode .smoke-text h1 {
+    color: white;
+}
+.contact-form-container{
+    display: flex;
+   flex-wrap: wrap;
+   margin: 50px 0px 100px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-img-container{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+   
+}
+.contact-gif{
+    width: 100%;
+    height: auto;
+   
+  
+}
+.contact-form{
+    width: 500px;
+    height: auto;
+    
+}
+form{
+    width: 100%;
+   max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+  
+    padding: 20px;
+   
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #333; /* Changed label color */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,form button{
+    width:90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+form button{
+    background: var(--background);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover{
+    background: var(--background-hover);
+}
+
+
+.hi{
+    font-weight: 700;
+    position: fixed;
+    bottom: 12rem;
+    right: 0.5rem;
+   
+}
+
+.bpFab {
+   
+    bottom: 8rem !important;
+    
+ }

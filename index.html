@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavya | Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/47abc1a791.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <canvas id="swirl-canvas"></canvas>
+    <header >
+        <nav class="navbar navbar-expand-lg fixed-top d-flex justify-content-around align-items-center">
+            <div class="logo ">
+                <img src="images/Logo.png" alt="">
+            </div>
+            <div class="d-flex align-items-center navbar-container ">
+                <ul class="navbar-nav navbar-collapse collapse" id="navbarSupportedContent" >
+                    <a class="elements" href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span >Home</span>
+                    </a>
+                    <a class="elements " href="About.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span href="">About</span>
+                    </a>
+    
+                    <a class="elements " href="project.html">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a class="elements " href="contact.html">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Contact</span>
+                    </a>
+                </ul>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="darkmode-toggle" class="ps-3">
+                    <img src="images/night.gif" id="mode" alt="Dark Mode" >
+                </div>
+            </div>
+        </nav>
+        <div class="main-content ">
+            <div class="smoke-video-text">
+                <video autoplay loop muted>
+                    <source src="images/homebg.mp4"  type="video/mp4" >
+                </video>
+            </div>
+            <div class="smoke-text " >
+                <h1 class="main-text  animate">✨Welcome to my digital space, where creativity 🎨 meets interactivity🖱️.  </h1>
+            
+            </div>
+            <span id="para" class="upside  animate">Let’s build something amazing together!🚀</span>
+            <div class="profile-section">
+                <div class="shadow-main-image upside  animate ">
+                    <video id="profile-picture" autoplay loop muted>
+                        <source src="images/kavyak.mp4"  type="video/mp4"  >
+                    </video>
+                </div>
+            </div>
+        </div>
+        <h2 id="about" class=" upside animate">🙋‍♀️Hi, I'm Kavya, a passionate 💻 <span class="about-me"></span> </h2>
+        <div id="hireme-icon">
+            <video autoplay loop muted>
+                <source src="images/Hireme.mp4" type="video/mp4" >
+            </video>
+        </div>
+    </header>
+    <main >
+        <section id="skills">
+            <h2 class="heading upside animate">💼 My Expertise</h2>
+            <div class="skills-list upside animate">
+                <li>Web Development</li>
+                <li>Responsive Web  Design</li>
+                <li>FrontEnd Development</li>
+            </div>
+        </section>
+
+        <section class="horizontal-scroll opacity animate">
+            <div class="icon-container">
+                <img src="icon/1.png" alt="Icon 1">
+                <img src="icon/2.png" alt="Icon 2">
+                <img src="icon/3.png" alt="Icon 3">
+                <img src="icon/4.png" alt="Icon 4">
+                <img src="icon/5.webp" alt="Icon 5">
+                <img src="icon/8.png" alt="Icon 8">
+                <img src="icon/10.png" alt="Icon 10">
+            </div>
+        </section>
+       
+        
+        <section id="projection_section" >
+            <h2 class="heading upside animate">🧩Projects</h2>
+            <p class="upside animate mb-4">Take a look at some of my works🔍.</p>
+            <section id="projects" class="upside animate">
+                <div class="thumbnail-content  opacity animate">
+                    <img src="images/RPSgame.png" alt="Project 1" class="thumbnail_img">
+                    <h3>Rock Paper Scissors Game</h3>
+                    <span>🎮 An interactive Rock Paper Scissors game implementation.</span>
+                    <a href="project.html#project2" class="icon-button">Know More</a>
+                </div>
+                <div class="thumbnail-content  opacity animate">
+                    <img src="images/datepicker.jpg" alt="Project 2" class="thumbnail_img">
+                    <h3>Date Picker Application</h3>
+                    <span>📅 A custom date picker component built with modern web technologies.</span>
+                    <a href="project.html#project1" class="icon-button">Know More</a>
+
+                </div>
+                <div class="thumbnail-content opacity animate">
+                    <img src="images/bg-little-mermaid.jpg" alt="Project 3" class="thumbnail_img">
+                    <h3>Modern Landing Page</h3>
+                    <span>🎞️ Movie landing page with carousel scroll, and smooth transitions.</span>
+                    <a href="project.html#project3" class="icon-button">Know More</a>
+
+                </div>
+             
+            </section>
+        </section>
+        <section class="contact-section ">
+            <h2 class="heading upside animate ">☎️Contact Information</h2>
+            <img src="images/Website Creator-amico.png" class="contact-img upside animate" alt="">
+            <p class="upside animate">🌟 Have a project in mind? Let’s bring it to life!💡</p>
+            <div class="contact-icons upside animate">
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=kavyaambure@gmail.com&su=Let's connect&body=Hi! I am kavya Ambure. Lets connect!" target="_blank"  class="icon-button  opacity animate">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/kavya-ambure-web-developer/" class="icon-button  opacity animate" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kavya Ambure  |  Made with ❤️</p>
+    </footer>
+</body>
+</html>

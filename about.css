@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Vidaloka&display=swap');
+
+.about-container{
+    display: flex;
+    justify-content: center;
+   padding-top: 50px;
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    background:linear-gradient(to left, #02a8b2, rgb(172 4 189));
+    gap: 30px;
+}
+.about-image {
+    width: 45%;
+    height: 105vh;
+    position: relative;
+    z-index: 9998;
+    background: url(./images/Mainimage.png) no-repeat 3% 100px;
+   
+    background-size: 360px;
+    background-attachment: fixed;
+    pointer-events: none;
+}
+.about-bg {
+    width: 100%;
+    height: 122vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 9998;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+ 
+   padding-top: 100px;
+    width: 50%;
+    height: auto;
+    
+    color: white;
+}
+.social-link-container {
+    position: absolute;
+    left: 3.3%;
+    top: 16%;
+    width: 300px;
+    height: 300px;
+ 
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+ 
+    justify-content: space-around;
+    align-items: center;
+    animation: circleAnimation 10s forwards, rotateCircle 40s   linear infinite; 
+   
+}
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+ @keyframes circleAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {   
+        opacity: 1;
+    }
+    
+ }
+
+.social-img{
+   position: absolute;
+   text-decoration: none;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 2.5em;
+    border: 2px solid yellow;
+    animation: counterRotate 40s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+   
+}
+@keyframes counterRotate {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .social-img:hover{
+   width: 60px;
+   height: 60px;
+   
+    box-shadow: 0px 0px 10px 2px yellow;
+  }
+.social-link {
+    position: absolute;
+}
+.social-link:nth-child(1) {
+    top: -6%;
+    left: 45%;
+    
+    
+}
+.social-link:nth-child(2) {
+top: 20%;
+left: -2%;
+}
+.social-link:nth-child(3) {
+    top: 20%;
+    right: 15%;
+}
+.social-link:nth-child(4) {
+    top: 73%;
+    left: 75%;
+}
+.social-link:nth-child(5) {
+   left: 5%;
+    top: 73%;
+}
+
+
+
+
+.about-content h1{
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 3em;
+}
+.about-content p {
+    margin: 20px 0px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1.2em;
+    text-align: justify;
+}
+.resume-button{
+    position: relative;
+    background: #831bcd;
+    border: solid yellow 2px;
+    margin-top: 30px;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+
+.skills-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow elements to go to the next row */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between skill boxes */
+    margin-top: 30px;
+
+}
+.skills-container{
+    display: flex;
+    width: 100%;
+    padding: 30px 0px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill-box, .skill-box2, .skill-box3 {
+    width: 700px; /* Reduce width slightly to fit side by side */
+   
+    padding: 20px;
+    
+}
+.skills-elements{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 10px;
+   
+}
+.skills-elements p{
+    margin-bottom: 0px;
+
+    text-align: left;
+}
+
+
+
+.progress-bar {
+    width: 0%; /* Ensure animation starts from 0% */
+    height: 30px;
+    background: linear-gradient(to left,rgb(43, 216, 247), rgb(212, 33, 248)); /* Change color if needed */
+    border-radius: 20px;
+    transition: width 2s ease-in-out; /* Ensure smooth transition */
+    margin-bottom: 15px;
+}
+
+/* Add this class */
+.progress-bar.animated {
+    transition: width 2s ease-in-out;
+}
+.skill-box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.backend-elements{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    
+}
+/* Circular Progress Animation */
+.progress-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#02a8b2 0deg, rgb(172, 4, 189) 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+.progress-circle::before {
+    content: "";
+    width: 75%;
+    height: 75%;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+}
+.progress-value {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+}
+.tools-main
+ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tool-box {
+    width: 300px;
+    height: 100px;
+    padding: 20px 30px;
+    background-color: #eaeaeaba;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Progress bar inside backend box */
+.tool-progress {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 0%; /* Ensure animation starts from 0% */
+    height: 100%;
+    background: linear-gradient(to left,rgb(43, 216, 247), rgb(212, 33, 248)); /* Change color if needed */
+   
+    
+}
+
+.tool-progress.animated {
+    transition: width 2s ease-in-out;
+}
+#education{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.education-box{
+    margin-top: 25px;
+    padding: 0px 19px;
+    font-weight: 800;
+}
+.education-box h3{
+    font-size: 2rem;
+    padding: 10px;
+}
+.education-box P{
+    font-style: normal;
+    font-size: 1.5rem;
+}
+#certification{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.certification-container {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.line-animation {
+    width: 20px;
+    background: rgb(228 224 224);
+   
+    border-radius: 10px;
+    height: 100%; /* Match height of content */
+    position: absolute;
+    left: 50%;
+}
+
+.progress-line {
+    width: 20px;
+    background: linear-gradient(217deg,rgb(43, 216, 247), rgb(212, 33, 248)); 
+    position: absolute;
+    top: 0;
+   ;
+    height: 0; /* Start with no height */
+    border-radius: 10px;
+    transition: height 1s linear; /* Smooth animation */
+}
+.dot {
+    width: 17px;
+    height: 17px;
+    box-shadow: 0px 0px 6px 9px white;
+    background-color: rgb(229, 240, 5);
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 1s ease-in-out;
+}
+
+.content-container {
+    padding-left: 20px;
+    flex: 1;
+}
+
+.certification {
+    box-shadow: 1px 2px 4px 2px #00000014;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+   
+    
+}
+.certification:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+    transform: translateX(-13px);
+    
+}
+.certification:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+    transform: translateX(13px);
+   
+}
+
+
+
+
+
+.dark-mode .about-container{
+    background: #000000;
+    color: white;
+}
+.dark-mode .certification {
+    box-shadow: 3px 1px 19px 3px #fefdfd58;
+}
+
+@media only screen and (max-width:1025px) {
+    .about-content {
+        width: 55%;
+    }
+    .about-content h1 {
+        
+        font-size: 2em;
+    }
+    
+    
+    .social-links:nth-child(2) {
+        
+        width: 60px;
+        height: 60px;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .content-container {
+    padding-left: 5px;
+    flex: 1;
+}
+.certification-container {
+    padding: 0px;
+}
+.about-content {
+    width: 48%;
+}
+
+    
+}
+@media only screen and (max-width:768px) {
+    .about-image {
+        width: 95%;
+        background-attachment: fixed;
+        z-index: 1;
+        background-position-x: center;
+}
+.about-content {
+  
+    padding-top: 0px;
+}
+.about-bg {
+    top: 73px;
+    z-index: 1;
+    
+}
+.social-link-container {
+
+    left: unset;
+    margin-left: -30px;
+}
+
+    .about-container {
+      align-items: center;
+        height: auto;
+        flex-direction: column;
+       
+    }
+   
+    
+    .about-content {
+        width: 90%;
+        height: auto;
+    }  
+    .about-content h1 {
+        font-size: 2.5em;
+    }
+    .resume-button {
+        
+        margin-bottom: 30px;
+    }
+    
+    .skill-box, .skill-box2, .skill-box3 {
+        width: 95%;
+        
+       
+    }
+    .progress-circle {
+        width: 100px;
+        height: 100px;
+    }
+    .content-container {
+       
+        padding-left: 5px;
+        flex: 1;
+        position: relative;
+        left: 7%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+        .line-animation {
+    
+        position: relative;
+        left: 4%;
+    }
+    
+        
+    .certification {
+        width: 80%;
+    }
+    .certification:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
+        transform: translateX(13px);
+    }
+
+    
+}
+@media only screen and (max-width:426px) {
+    .progress-circle {
+        width: 85px;
+        height: 85px;}
+        .tool-box {
+            width: 238px;
+            height: 50px;
+        }
+        .social-link-container {
+        
+            width: 210px;
+            height: 210px;
+        }
+        .resume-button {
+            padding: 5px;
+        }
+       
+        
+        
+
+}
+@media only screen and (max-width:375px) {
+    .about-image {
+        background-position-y: 100%;
+        background-size: 300px 580px;
+    }
+   
+    .social-link-icon img, .social-link-icon h1 {
+       
+        height: 45px;
+        width: 45px;}
+
+}

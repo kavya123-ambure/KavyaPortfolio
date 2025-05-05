@@ -1,0 +1,735 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Vidaloka&display=swap');
+
+body{
+    background-color: #f0f2f0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    line-height: 2;
+    box-sizing: border-box;
+    
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    z-index: 9999; 
+    pointer-events: none; /* Allows clicking/hovering through it */
+}
+:root{
+    --background:linear-gradient(to left, #02a8b2, rgb(172 4 189));
+    --background-hover:linear-gradient(to right, #02a8b2, rgb(172 4 189));
+    --font-style:"Vidaloka", serif;
+}
+header, footer{
+    background: var(--background);
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0px;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    background: var(--background);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  
+}
+.logo img{
+    height: 70px;
+    width: auto;
+}
+
+ul.navbar-nav{
+    display: flex;
+    flex-direction: row; /* Ensure items are in a row */
+    align-items: center;
+    justify-content: center;
+    padding: 0px 60px;
+   
+   
+    gap: 70px;
+    flex-grow: 0;
+    z-index: 9999;
+    
+}
+.elements{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    padding: 6px 12px;
+    margin-top: 0; 
+    transition: margin-top 0.3s ease;
+}
+.elements i {
+    font-size: 25px;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+   
+}
+.elements span{
+    display: none;
+    transition: display 0.3s ease;
+    color: white;
+}
+
+.elements:hover {
+    margin-top: -25px;
+   
+}
+
+.elements:hover span {
+    display:inline;
+}
+
+
+
+button.navbar-toggler {
+    background: white;
+    padding: 2px 4px;
+}
+.heading{
+    font-family: var(--font-style);
+    font-weight: 700;
+    font-size: 3rem;
+}
+p{
+    font-weight: 600;
+    font-size: 18px;
+}
+#mode{
+    height: 30px;
+     width: auto;
+}
+.main-content{
+    margin-top: 100px;
+}
+.smoke-video-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    mix-blend-mode: lighten;
+    
+    top: 0;
+}
+.smoke-video-text video{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    
+    mix-blend-mode: screen;
+}
+
+/* Initial state: Hide and shift the text */
+.smoke-text h1 {
+    font-size: 4em;
+    font-weight: 700;
+    color:white;
+    line-height: 1;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+   
+    
+}
+.main-text.animated { 
+    animation: mainText 2s forwards;
+    position: relative;
+}
+
+
+@keyframes mainText {
+    0% {
+        line-height: 2;
+        transform: translateY(20px);
+    }
+    100% {
+        line-height: 1.3;
+        transform: translateY(0px);
+    }
+}
+
+span#para{
+   font-weight: 700;
+   display: block;
+   
+   padding: 20px 0px;
+   font-size: 23px;
+}
+.profile-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.shadow-main-image{
+    position: relative;
+    height: 403px;
+    width: 403px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#profile-picture{
+    border-radius: 50%;
+    z-index: 1000;
+    width: 400px;
+    height: auto;
+    
+}
+#hi{
+    width: 8vw;
+    height: auto;  
+    position: relative; 
+    left: -10px ;
+}
+
+#hireme-icon {
+    position: fixed;
+    left: 60px;
+    bottom: 50px;
+    z-index: 1000;
+    width: 135px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#hireme-icon video{
+    width:132px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.shadow-main-image:hover, #hireme-icon:hover{
+    background-color: rgb(219, 131, 0);
+    cursor: pointer;
+    /* Golden shine box-shadow */
+    box-shadow: 
+        0 0 10px rgba(255, 223, 0, 0.6),    /* Inner golden glow */
+        0 0 20px rgba(255, 223, 0, 0.5),    /* Outer soft glow */
+        0 0 30px rgba(255, 215, 0, 0.4),    /* Medium distance glow */
+        0 0 40px rgba(255, 200, 0, 0.3);    /* Farther faint glow */
+}
+
+
+h2#about{
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 25px;
+    position: relative;
+    font-style: oblique;
+}
+
+.fas, .fab{
+    margin-right: 1px;
+    color: inherit;
+}
+main{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#skills h2{
+    margin: 30px;
+    text-align: center;
+}
+.skills-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 5px;
+
+}
+.skills-list li{ 
+    list-style-type: none;
+   text-align: center;
+    border-radius: 5px;
+    padding: 10px ;
+    width: 300px;
+    display: inline-block;
+    animation: bounce 1s infinite alternate;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+@keyframes bounce {
+    from{
+        transform: translateY(0);
+        background: linear-gradient(to left,#02a8b2,rgb(181, 3, 235));
+    }
+    to{
+        transform: translateY(-20px);
+        background: linear-gradient(to right, #02a8b2,rgb(181, 3, 235));
+    }
+}
+.dark-mode {
+    background-color:black;
+    color: #fff;
+}
+
+.dark-mode .form-group label {
+    color: #fff;
+}
+
+.dark-mode p{
+    color: #fff;
+}
+.dark-mode header{
+    background: black;
+}
+
+
+.dark-mode .skills-list li{
+    color: white;
+}
+.dark-mode .navbar{
+    background: black;
+}
+.dark-mode .thumbnail-content {
+    box-shadow: 2px 0px 10px 1px rgb(246 242 242 / 57%);
+}
+.dark-mode form {
+   
+    box-shadow: 0px 1px 40px -2px rgb(246 239 239 / 41%);
+   
+}
+.dark-mode .icon-button {
+   
+    box-shadow: -1.5px 3px 10px 0px rgb(251 247 247 / 74%);
+}
+
+footer span{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+.horizontal-scroll{
+    overflow: hidden;
+    width: 80%;
+}
+.icon-container{
+    display: flex;
+    width: max-content;
+    animation: scrollAnimation 10s linear infinite;
+}
+@keyframes scrollAnimation {
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
+.icon-container img{
+    margin-right: 20px;
+    width: 70px;
+    height: 70px;
+
+}
+#projection_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+
+#projects{
+    display: flex;
+    width: 95%;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+   
+    
+}
+.thumbnail-content {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    gap: 20px;
+    width: 320px;
+    box-shadow: 0px 0px 6px 2px rgb(0 0 0 / 37%);
+    height: auto;
+    
+    
+}
+.thumbnail_img{
+    width: 320px;
+    height:250px;
+    
+    
+}
+.thumbnail-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--font-style);
+}
+.thumbnail-content span {
+    font-weight: 600;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+
+
+.thumbnail-content .btn:hover {
+    background-color: #f9620b;
+}
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+.contact-section p{
+    font-size: 2rem;
+    margin: 20px;
+    font-weight: 600;
+    font-style: normal;
+   
+}
+.contact-img{
+    width: 500px;
+    height: auto;
+   
+    animation: displaygif 5s ease-in-out;
+
+}
+.contact-icons{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    
+}
+.icon-button{
+    display: inline-block;
+    font-weight: 700;
+    padding: 10px 25px;
+    background-color: rgb(132, 4, 222);
+    color: white;
+    box-shadow: 2px 4px 13px -4px rgb(4, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.icon-button i{
+    font-size: 35px;
+    padding: 0px 15px;
+}
+@keyframes displaygif {
+    0% {
+        display: none;
+    }
+    100% {
+        display: inline-block;
+    }
+    
+}
+
+
+.left.animated{
+    position: relative;
+    animation: left 1s ease-in-out;
+}
+@keyframes left {
+    0% {
+        opacity: 0;
+        left: -43%;
+    }
+    100% {
+        opacity: 1;
+        left: 0%;
+    }
+    
+}
+
+  
+  .right.animated {
+    position: relative;
+    animation: right 1s ease-in-out forwards;
+    
+  }
+  
+  @keyframes right {
+    0% {
+      opacity: 0;
+      right: -50%;
+    }
+    100% {
+      opacity: 1;
+      right: 0.5%;
+    }
+  }
+  
+
+.upside.animated{
+    position: relative;
+   
+    animation: upside 2s ease-in-out;
+}
+@keyframes upside {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+.opacity.animated{
+    position: relative;
+    
+    animation: opacity 2s forwards ;
+    
+}
+@keyframes opacity {
+    0% {
+        
+        opacity: 0;
+    }
+    100% {
+        
+        opacity: 1;
+    }
+    
+}
+
+@media only screen and (max-width:1025px){
+    .navbar{
+      
+        height: 85px;
+    }
+    .smoke-video-text video {
+        
+        top: 40%;}
+    
+}
+@media only screen and (max-width:992px){
+    ul.navbar-nav {
+        padding: 10px;
+        position: absolute;
+        flex-direction: column;
+        top: 92%;
+        background: black;
+        border-radius: 10px;
+      
+        height: auto;
+    }
+    .elements {
+        gap: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .elements span{
+        display: inline;
+        
+    }
+
+}
+
+
+@media only screen and (max-width:768px){
+    
+    .logo img {
+        height: 70px;
+        width: auto;
+    }
+    .smoke-video-text video {
+        top: 25%;
+    }
+    .smoke-text h1 {
+        font-size: 3em;
+    }
+    
+    .skills-list{
+        flex-direction: column;
+    }
+   
+    
+    h2#about{
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    #profile-picture{
+        width: 300px;
+    }
+    .shadow-main-image{
+        height: 305px;
+        width: 305px;
+    }
+    #hireme-icon {
+        position: fixed;
+        left: 10px;
+        bottom: 20px;
+        height: 115px;
+        width: 115px;
+
+    }
+    #hireme-icon video {
+        width: 112px;
+        height: auto;
+    }
+    
+    .right.animated, .left.animated {
+       
+        animation: upside 1s ease-in-out ; /* Apply upside animation */
+    }
+    
+}
+
+@media only screen and (max-width:628px){
+    .smoke-video-text h1{
+        font-size: 40px;
+    }
+    ul.navbar-nav {
+       
+        right: 2%;}
+}
+
+@media only screen and (max-width:480px){
+    .icon-link{
+        width: 50px;
+        height: 50px;
+    }
+
+    h1 , h2{
+        font-size: 16px;
+
+    }
+    
+    .contact-img{
+        width: 300px;
+        height: auto;
+    }
+   
+   
+   
+}
+@media only screen and (max-width:426px){
+    
+    header {
+        padding: 35px 0px;
+    }
+  
+    .smoke-text h1 {
+        font-size: 2em;
+    }
+    div.navbar-toggler {
+        padding: 1px 1.5px;
+    }
+    #mode{
+        height: 30px;
+        width: auto;
+    }
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+    
+   
+    h2#about{
+        font-size: 15px;
+    }
+ 
+    .thumbnail-content {
+        width: 290px;
+    }
+    .thumbnail_img {
+        width: 100%;
+        height: auto;
+    }
+    span#para {
+       
+        font-size: 15px;
+    }
+    
+    #profile-picture{
+        width: 250px;
+    }
+    #hi {
+        width: 50px;
+        height: auto;
+        position: relative;
+    }
+    .shadow-main-image{
+        height: 255px;
+        width: 255px;
+    }
+    #hireme-icon {
+        left: 10px;
+        bottom: 150px;
+        height: 95px;
+        width: 95px;
+
+    }
+    #hireme-icon video {
+        width: 90px;
+        height: auto;
+    }
+}
+@media only screen and (max-width:320px){
+    .smoke-video-text video {
+        top: 35%;
+    }
+    .contact-img.animated{
+        width: 300px;
+    }
+
+}
+
+
+
+
+    
+
+
+
+
+

@@ -1,0 +1,149 @@
+
+.projects{
+   
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.smoke-text h1 {
+    color: black;
+    margin-top: 50px;
+}
+.dark-mode .smoke-text h1 {
+    color: white;
+}
+
+.project-content {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 3px 5px 5px 3px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;    
+   
+}
+.project-heading{
+    font-family: "Vidaloka", serif;
+    font-weight: 800;
+    text-align: center;
+}
+.small-project{
+    max-width: 45%;  
+}
+
+.project-img {
+    
+    width: 30vw;
+    border-radius: 20px;
+}
+
+.project-details {
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    padding: 10px;
+   
+}
+.project-details span {
+    font-weight: 500;
+    font-size: 14px;
+}
+.link-container{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+}
+.fa-brands{
+    font-size: 40px;
+    color: black;
+}
+.project-link{
+    border: 2px solid #dbee05;
+    background-color: #831bcd;
+    color: white;
+    padding: 10px 30px;
+    font-weight: 600;
+    
+}
+.large-project-content{
+    width: 45%;
+}
+
+.large-project-img{
+    width: 51%;
+    border-radius: 20px;
+    
+}
+.link-container button{
+    border: unset;
+    padding: 10px 16px;
+}
+.dark-mode .project-content {
+    background-color: black;
+    
+    box-shadow: 3px 2px 5px 3px rgb(251 246 246);
+}
+
+@media only screen and (max-width: 1024px) {
+    .projects{
+        padding: 100px 30px;
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    main {
+        margin-top: 0px;
+    }
+    .project-img {
+        width: 90%;
+        height: auto;
+    }
+    .project-content {
+        flex-direction: column;
+    }
+    .large-project-img {
+        width: 90%;
+        height: auto;
+    }
+    .large-project-content {
+        width: 90%;
+        height: auto;
+    }
+    .small-project {
+        max-width: 100%;
+        height: auto;
+    }
+    .project-details {
+        width: 100%;
+        height: auto;
+    }
+   
+}
+@media only screen and (max-width: 768px) {
+    #project-heading {
+        font-size: 2rem;
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 388px) {
+    .projects {
+        padding: 100px 18px;
+    }
+    .project-link{
+       
+        padding: 10px;
+        font-weight: 600;
+        
+    }
+}
