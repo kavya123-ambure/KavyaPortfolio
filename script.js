@@ -201,13 +201,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('touchmove', (e) => {
         mouse.x = e.touches[0].clientX;
         mouse.y = e.touches[0].clientY;
-        createParticles(2);
+        createParticles(3);
     });
 
     function createParticles(count) {
         for (let i = 0; i < count; i++) {
-            let angle = Math.random() * Math.PI * 2;
-            let distance = Math.random() * 30; // Close to cursor initially
+            let angle = Math.random() * Math.PI * 1;
+            let distance = Math.random() * 10; // Close to cursor initially
             let offsetX = Math.cos(angle) * distance;
             let offsetY = Math.sin(angle) * distance;
             particles.push(new Particle(mouse.x + offsetX, mouse.y + offsetY));

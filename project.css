@@ -68,14 +68,12 @@
     font-size: 40px;
     color: black;
 }
-.project-link{
-    border: 2px solid #dbee05;
-    background-color: #831bcd;
-    color: white;
-    padding: 10px 30px;
-    font-weight: 600;
-    
+.fa-github:hover {
+    border-radius: 50%;
+   scale: 1.1;
+    box-shadow: 0px 1px 7px 0px #ceb006;
 }
+
 .large-project-content{
     width: 45%;
 }

@@ -243,9 +243,14 @@
         </section>
 
     </main>
-     <footer>
-        <p>&copy; 2024 Kavya Ambure  |  Made with ❤️</p>
+    <footer>
+       
+        <p>&copy; <span id="year"></span>  All rights reserved.</p>
+        <p>Made with ❤️ by Kavya Ambure</p>
+   
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
     </footer>
-    
 </body>
 </html>

@@ -166,7 +166,10 @@ left: -2%;
     text-decoration: none;
     
 }
-
+.resume-button:hover{
+    scale: 1.1;
+    
+}
 
 .skills-section{
     width: 100%;
