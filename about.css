@@ -232,7 +232,7 @@ left: -2%;
 .backend-elements{
     display: flex;
     flex-direction: column;
-    
+    text-align: center;
     gap: 10px;
     
 }
@@ -269,6 +269,7 @@ left: -2%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    text-align: center;
 }
 
 .tool-box {
